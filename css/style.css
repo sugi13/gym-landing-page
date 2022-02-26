@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand h1{
+    padding: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+}
+.brand h1::first-letter{
+    color:rgb(63, 63, 247);
+}
+.brand img{
+    width: 10%;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.content{
+width: 100%;
+}
+.content h1{
+    font-size: 2.3rem;
+}
+
+#Email-field{
+    width: 50%;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+#register-btn{
+    background-color: rgb(63, 63, 247);
+    color: white;
+    padding: 10px;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+/* section */
+section {
+    margin-top: 150px;
+}
+section h1{
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.Card-banner{
+    transition: transform .2s linear; 
+}
+
+.Card-banner:hover{
+   transform: scale(1.2);
+}
+.card-1, .card-2, .card-3{
+    width: 300px;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+}
+
+.card-2{
+    background-color: white;
+    color: black;
+    border: 2px solid royalblue;
+}
+#main{
+    background-color: rgb(63, 63, 247);
+    color:white;
+}
+.level {
+    margin: 20px;;
+    font-size: 1rem;
+}
+.card li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    opacity: .6;
+}
+.card a{
+    text-decoration: none;
+    margin: 10px;
+    border:2px solid white;
+    padding: 10px;
+    background-color: white;
+    color:rgb(63, 63, 247);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.price{
+    font-size: 2rem;
+}
+h4{
+    font-size: 2.3rem;
+    margin-top: 150px;
+    text-align: center;
+}
+.About-us-wrapper, .products-wrapper, .services-wrapper{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.About-us-wrapper, .products-wrapper, .services-wrapper p{
+    color: rgb(151, 151, 151);
+}
+.signup-wrapper{
+    height: 250px;
+    background-color: rgb(63, 63, 247);
+    text-align: center;
+}
+#signup{
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.signup-wrapper h1{
+    margin-top: 20px;
+    color: white;
+    text-decoration:underline;
+}
+#signup-btn{
+    background-color: white;
+    color: rgb(63, 63, 247);
+    padding: 10px;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    height: 250px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#footer-content{
+    display: flex;
+}
+#footer-content li{
+    padding: 10px;
+    list-style: none;
+    margin: 10px;
+    transition: color .2s linear;
+    cursor: pointer;
+}
+#footer-content li:hover{
+    color: rgb(63, 63, 247);
+}
+
+@media screen and (Max-width: 578px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+    input[type="email"]{
+        width: auto;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3{
+        margin:10px;
+    }
+    .About-us-wrapper, .products-wrapper, .services-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+    .Card-banner{
+        transition: transform .2s linear;
+    }
+    .Card-banner:hover{
+        transform: scale(.8);
+    }
+    h1 *{
+        font-size:1rem;
+    }
+
+    footer, #footer-content{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        height: auto;
+        cursor: none;
+    }
+
+}
